@@ -5,10 +5,12 @@ import {styles} from './style/index';
 const InputScreen = ({navigation}) => {
   return (
     <View style={styles.cont}>
-      <Image
-        style={styles.img}
-        source={require('../../../img/StartScreen.png')}
-      />
+      <View style={styles.imgCont}>
+        <Image
+          style={styles.img}
+          source={require('../../../img/StartScreen.png')}
+        />
+      </View>
       <TouchableOpacity
         style={styles.button}
         onPress={() => {
